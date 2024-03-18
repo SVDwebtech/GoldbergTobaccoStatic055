@@ -57,7 +57,7 @@ html {
 }
 
 body {
-  background-color: #1E2020;
+  background-color: rgb(199, 145, 43);
   /* This makes dealing with the sizes of elements much easier, 
   	and generally eliminates a number of pitfalls you can stumble on
   	 while laying out your content. */
