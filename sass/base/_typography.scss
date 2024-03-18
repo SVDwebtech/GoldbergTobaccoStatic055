@@ -4,14 +4,23 @@
 // font-family: 'Rum Raisin', sans-serif;  --- H1
 
 body {
-	color: $cf-grey;
+	color: $cf-eggshell;
 	font-family: 'Lato', sans-serif;
 	font-size: clamp(1.4rem, 4.6vw, 1.6rem);
 	font-weight: 400;
 	text-align: center;
 	line-height: 1.6;
 }
-.paragraph {	
+.paragraph {
+	&--dev {
+		font-size: clamp(1.2rem, 4.5vw, 1.4rem);
+		line-height: 1.2;
+	}
+	&--devName {
+		color: $cf-harvest-gold;
+		text-decoration: underline;
+		text-underline-offset: 3px;
+	}	
 }
 .btn {	
 }

@@ -1,3 +1,9 @@
-// style footer section
 .footer {
+      @include displayFlexColumn;
+
+      width: min(100%, 45rem);
+      padding: 1rem;
+      &__copyAndDev {
+            @include displayFlexColumn;
+      }
 }

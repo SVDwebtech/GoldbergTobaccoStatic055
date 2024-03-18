@@ -57,7 +57,12 @@ html {
 }
 
 body {
-  background-color: rgb(199, 145, 43);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: rgb(1, 19, 56);
   /* This makes dealing with the sizes of elements much easier, 
   	and generally eliminates a number of pitfalls you can stumble on
   	 while laying out your content. */
@@ -84,12 +89,22 @@ a {
 }
 
 body {
-  color: #898989;
+  color: rgb(225, 225, 202);
   font-family: "Lato", sans-serif;
   font-size: clamp(1.4rem, 4.6vw, 1.6rem);
   font-weight: 400;
   text-align: center;
   line-height: 1.6;
+}
+
+.paragraph--dev {
+  font-size: clamp(1.2rem, 4.5vw, 1.4rem);
+  line-height: 1.2;
+}
+.paragraph--devName {
+  color: rgb(245, 170, 21);
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .u-center-text {
@@ -128,6 +143,23 @@ body {
   border-right: 2px solid #898989;
   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.7);
   transform: translateY(-1px);
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: min(100%, 45rem);
+  padding: 1rem;
+}
+.footer__copyAndDev {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
 .header {
