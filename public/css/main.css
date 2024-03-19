@@ -169,8 +169,14 @@ body {
   align-items: center;
   gap: 1rem;
   gap: 3rem;
+  background-color: #011338;
   width: min(100%, 45rem);
   padding: 1rem;
+}
+.footer__logoImg {
+  display: block;
+  width: 15rem;
+  height: auto;
 }
 .footer__navList {
   display: flex;
