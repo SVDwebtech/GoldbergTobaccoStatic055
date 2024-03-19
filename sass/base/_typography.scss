@@ -36,4 +36,8 @@ body {
 .btn {	
 }
 .footer {
+	&__navItem {
+		text-decoration: underline;
+		text-underline-offset: 3px;
+	}
 }

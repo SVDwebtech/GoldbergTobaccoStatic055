@@ -1,9 +1,13 @@
 .footer {
       @include displayFlexColumn;
-      gap: 2rem;
+      gap: 3rem;
 
       width: min(100%, 45rem);
       padding: 1rem;
+      &__navList {
+            @include displayFlexColumn;
+            gap: .5rem;
+      }
       &__address {
             @include displayFlexColumn;
             gap: .25rem;
