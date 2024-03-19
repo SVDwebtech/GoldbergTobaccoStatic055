@@ -62,7 +62,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  background-color: rgb(1, 19, 56);
+  background-color: #011338;
   /* This makes dealing with the sizes of elements much easier, 
   	and generally eliminates a number of pitfalls you can stumble on
   	 while laying out your content. */
@@ -89,7 +89,7 @@ a {
 }
 
 body {
-  color: rgb(225, 225, 202);
+  color: #e1e1ca;
   font-family: "Lato", sans-serif;
   font-size: clamp(1.4rem, 4.6vw, 1.6rem);
   font-weight: 400;
@@ -97,12 +97,24 @@ body {
   line-height: 1.6;
 }
 
+.headingH3 {
+  color: #011338;
+  font-family: "Lato", sans-serif;
+  font-size: clamp(1.8rem, 6vw, 2rem);
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.6;
+}
+.headingH3--footer {
+  color: #c7912b;
+}
+
 .paragraph--dev {
-  font-size: clamp(1.2rem, 4.5vw, 1.4rem);
+  font-size: clamp(1.2rem, 4vw, 1.4rem);
   line-height: 1.2;
 }
 .paragraph--devName {
-  color: rgb(245, 170, 21);
+  color: #f5aa15;
   text-decoration: underline;
   text-underline-offset: 3px;
 }
@@ -151,8 +163,36 @@ body {
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  gap: 2rem;
   width: min(100%, 45rem);
   padding: 1rem;
+}
+.footer__address {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  gap: 0.25rem;
+}
+.footer__contactLinkFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  gap: 0.5rem;
+  margin-right: 2rem;
+}
+.footer__contactIconFooter {
+  display: block;
+  width: 2.7rem;
+  height: 2.7rem;
+}
+.footer__contactIconFooter--addressFooter {
+  display: block;
+  width: 2.4rem;
+  height: 2.4rem;
 }
 .footer__copyAndDev {
   display: flex;

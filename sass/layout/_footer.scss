@@ -1,8 +1,28 @@
 .footer {
       @include displayFlexColumn;
+      gap: 2rem;
 
       width: min(100%, 45rem);
       padding: 1rem;
+      &__address {
+            @include displayFlexColumn;
+            gap: .25rem;
+      }
+      &__contactLinkFooter {
+            @include displayFlexRow;
+            gap: .5rem;
+            margin-right: 2rem;
+      }
+      &__contactIconFooter {
+            display: block;
+            width: 2.7rem;
+            height: 2.7rem;
+      }
+      &__contactIconFooter--addressFooter {
+            display: block;
+            width: 2.4rem;
+            height: 2.4rem;
+      }
       &__copyAndDev {
             @include displayFlexColumn;
       }
