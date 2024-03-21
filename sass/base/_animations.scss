@@ -1,130 +1,44 @@
-// // animations
-// @keyframes animateNavListContainerMoveIn {
-//   0% {
-//     transform: translateX(-100%);
-//   }
+// animations
+@keyframes animateNavListContainerMoveIn {
+  0% {
+    transform: translateX(-100%);
+  }
 
-//   100% {
-//     transform: translateX(0%);
-//   }
-// }
+  100% {
+    transform: translateX(0%);
+  }
+}
 
-// @keyframes animateNavListContainerMoveOut {
-//   0% {
-//     transform: translateX(0%);
-//   }
+@keyframes animateNavListContainerMoveOut {
+  0% {
+    transform: translateX(0%);
+  }
 
-//   100% {
-//     transform: translateX(-100%);
-//   }
-// }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 
-// @keyframes animateNavItemsMoveIn {
-//   0% {
-//     transform: translateY(25px);
-//   }
+@keyframes animateNavItemsMoveIn {
+  0% {
+    transform: translateY(25px);
+  }
 
-//   100% {
-//     transform: translateY(0px);
-//     opacity: 1;
-//   }
-// }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
 
-// @keyframes animateNavItemsMoveOut {
-//   0% {
-//     // transform: translateX(0px);
-//     opacity: 1;
-//   }
+@keyframes animateNavItemsMoveOut {
+  0% {
+    // transform: translateX(0px);
+    opacity: 1;
+  }
 
-//   100% {
-//     // transform: translateX(200px);
-//     opacity: 0;
-//   }
-// }
-
-// /////////////////////////////////////////////////////////////////
-// // imageSlider animation
-// /////////////////////////////////////////////////////////////////
-
-// @keyframes slideMoveInFromRight {
-//     0% {
-//         transform: translateX(25rem);
-//         opacity: 0;
-//     }
-
-//     60% {
-//         opacity: .2;
-//     }
-
-//     100% {
-//         transform: translateX(0rem);
-//         opacity: 1;
-//     }
-// }
-
-// @keyframes slideMoveInFromLeft {
-//     0% {
-//         transform: translateX(-25rem);
-//         opacity: 0;
-//     }
-
-//     60% {
-//         opacity: .2;
-//     }
-
-//     100% {
-//         transform: translateX(0rem);
-//         opacity: 1;
-//     }
-// }
-
-// @keyframes slideMoveOutToLeft {
-//     0% {
-//         transform: translateX(0rem);
-//         opacity: 1;
-//     }
-
-//     40% {
-//         opacity: .3;
-//     }
-
-//     100% {
-//         transform: translateX(-25rem);
-//         opacity: 0;
-//     }
-// }
-
-// @keyframes slideMoveOutToRight {
-//     0% {
-//         transform: translateX(0rem);
-//         opacity: 1;
-//     }
-
-//     40% {
-//         opacity: .3;
-//     }
-
-//     100% {
-//         transform: translateX(25rem);
-//         opacity: 0;
-//     }
-// }
-
-// @keyframes productAnimation {
-//     0% {
-//         opacity: 0;
-//     }
-
-//     40% {
-//         opacity: 1;
-//     }
-
-//     80% {
-//         opacity: 1;
-//     }
-
-//     100% {
-//         opacity: 0;
-//     }
-// }
+  100% {
+    // transform: translateX(200px);
+    opacity: 0;
+  }
+}
 

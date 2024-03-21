@@ -1,3 +1,27 @@
 //style navbar
 .navbarSection {
-}
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: $cp-oxford-blue;
+      padding: 1rem 2rem;
+      visibility: hidden;
+      opacity: 0;
+      position: fixed;
+      top: 0;
+      left: 0; 
+      right: 0;
+      z-index: 1000;
+      transition: all .6s;
+      @include respond(tab-port) {
+          padding: 1rem 4rem;        
+      }
+      @media (min-width: 2000px) {
+          margin: 0 auto;
+          max-width: 2000px;
+      }
+  }
+  .navbar--background {
+      background-color: $cp-oxford-blue;
+      border-bottom: 1px solid $cp-harvest-gold;
+  }
