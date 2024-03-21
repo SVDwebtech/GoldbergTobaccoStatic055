@@ -150,6 +150,11 @@ body {
   text-align: left;
   line-height: 1.2;
 }
+@media (min-width: 340px) {
+  .paragraph--contactDetailFooter {
+    font-size: clamp(1.3rem, 4vw, 1.6rem);
+  }
+}
 .paragraph--dev {
   font-size: clamp(1.2rem, 4vw, 1.4rem);
   line-height: 1.2;
@@ -395,26 +400,53 @@ body {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  gap: 0.25rem;
+  gap: 2rem;
+}
+@media (min-width: 340px) {
+  .footer__address {
+    gap: 0.25rem;
+  }
 }
 .footer__contactLinkFooter {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  gap: 0.5rem;
-  margin-right: 2rem;
+  gap: 0rem;
+}
+@media (min-width: 340px) {
+  .footer__contactLinkFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    gap: 0.5rem;
+    margin-right: 2rem;
+  }
 }
 .footer__contactIconFooter {
   display: block;
-  width: 2.7rem;
-  height: 2.7rem;
+  width: 3.7rem;
+  height: 3.7rem;
 }
 .footer__contactIconFooter--addressFooter {
   display: block;
-  width: 2.4rem;
-  height: 2.4rem;
+  width: 3.4rem;
+  height: 3.4rem;
+}
+@media (min-width: 340px) {
+  .footer__contactIconFooter {
+    display: block;
+    width: 2.7rem;
+    height: 2.7rem;
+  }
+  .footer__contactIconFooter--addressFooter {
+    display: block;
+    width: 2.4rem;
+    height: 2.4rem;
+  }
 }
 .footer__copyAndDev {
   display: flex;

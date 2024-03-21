@@ -31,6 +31,12 @@ body {
 		text-align: left;
 		line-height: 1.2;
 	}
+	&--contactDetailFooter {
+		@media (min-width: 340px) {
+			font-size: clamp(1.3rem, 4vw, 1.6rem);	
+		}
+		
+	}
 	&--dev {
 		font-size: clamp(1.2rem, 4vw, 1.4rem);
 		line-height: 1.2;

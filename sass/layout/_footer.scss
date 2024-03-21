@@ -16,22 +16,41 @@
       }
       &__address {
             @include displayFlexColumn;
-            gap: .25rem;
+            gap: 2rem;
+            @media (min-width: 340px) {
+                  gap: .25rem;
+            }
       }
       &__contactLinkFooter {
-            @include displayFlexRow;
-            gap: .5rem;
-            margin-right: 2rem;
+            @include displayFlexColumn;
+            gap: 0rem;
+            @media (min-width: 340px) {
+                  @include displayFlexRow;
+                  gap: .5rem;
+                  margin-right: 2rem;
+            }
       }
       &__contactIconFooter {
             display: block;
-            width: 2.7rem;
-            height: 2.7rem;
+            width: 3.7rem;
+            height: 3.7rem;
       }
       &__contactIconFooter--addressFooter {
             display: block;
-            width: 2.4rem;
-            height: 2.4rem;
+            width: 3.4rem;
+            height: 3.4rem;
+      }
+      @media (min-width: 340px) {
+            &__contactIconFooter {
+                  display: block;
+                  width: 2.7rem;
+                  height: 2.7rem;
+            }
+            &__contactIconFooter--addressFooter {
+                  display: block;
+                  width: 2.4rem;
+                  height: 2.4rem;
+            }
       }
       &__copyAndDev {
             @include displayFlexColumn;
