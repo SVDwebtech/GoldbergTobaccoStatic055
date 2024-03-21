@@ -32,7 +32,6 @@ app.get('*', (req, res) => {
       res.send("I do not know that path!");
 })
 
-
 app.listen(3000, () => {
       console.log("Listening on Port:3000");
 });

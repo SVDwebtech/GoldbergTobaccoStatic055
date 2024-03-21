@@ -1,6 +1,45 @@
 // style header section
 .header {
+    @include displayFlexColumn;
+    min-height: 95vh;
+    padding: 2rem 1rem;
     position: relative;
-    min-height: 200vh;
+}
+.hero {
+    @include displayFlexColumn;
+    gap: 1.5rem;
+    width: min(100%, 45rem);
+    &__logoImage {
+        display: block;
+        width: 17rem;
+        height: auto;
+        border-radius: $br-circle;
+        box-shadow: -5px 5px 18px 3px rgba($cp-dark, .25);
+        box-sizing: border-box;
+    }
+    &__cta {
+        @include displayFlexColumn;
+    }
+    &__headingHero {
+        @include displayFlexColumn;
+        gap:.75rem;
+    }
+    @include respond(tab-land) {
+        @include displayFlexRow;
+        gap: 5rem;
+        width: min(100%, 65rem);
+        &__logoImage {
+            width: 25rem;
+        }
+        &__cta, &__headingHero {
+           align-items: flex-start;
+        }
+    }
+    @include respond(desk) {
+        width: min(100%, 75rem);
+    }
+    @include respond(big-desk) {
+        width: min(100%, 95rem);
+    }
 }
 

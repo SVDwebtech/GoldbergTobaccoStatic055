@@ -95,7 +95,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  background-color: #011338;
+  background-color: #e1e1ca;
   /* This makes dealing with the sizes of elements much easier, 
   	and generally eliminates a number of pitfalls you can stumble on
   	 while laying out your content. */
@@ -128,6 +128,50 @@ body {
   font-weight: 400;
   text-align: center;
   line-height: 1.6;
+}
+@media (min-width: 56.25em) {
+  body {
+    text-align: left;
+  }
+}
+
+.headingHero__headingH1 {
+  color: #011338;
+  font-family: "Rum Raisin", sans-serif;
+  font-size: clamp(1.8rem, 6vw, 2rem);
+  font-weight: 900;
+  letter-spacing: 3px;
+  text-align: center;
+  line-height: 1.1;
+}
+.headingHero__byline {
+  color: #f5aa15;
+  font-family: "Lato", sans-serif;
+  font-size: clamp(1.6rem, 6vw, 1.8rem);
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: center;
+  text-shadow: 1px 1px 1px #011338;
+  line-height: 1.2;
+}
+.headingHero__intro {
+  color: #011338;
+  font-family: "Lato", sans-serif;
+  font-size: clamp(1.4rem, 4.6vw, 1.6rem);
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.4;
+}
+@media (min-width: 56.25em) {
+  .headingHero__headingH1 {
+    text-align: left;
+  }
+  .headingHero__byline {
+    text-align: left;
+  }
+  .headingHero__intro {
+    text-align: left;
+  }
 }
 
 .headingH3 {
@@ -188,6 +232,8 @@ body {
 
 .btn {
   border: 2px solid white;
+  border-top: 2px solid rgba(137, 137, 137, 0.45);
+  border-left: 2px solid rgba(137, 137, 137, 0.45);
   border-radius: 0.45rem;
   box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.5);
   width: fit-content;
@@ -206,6 +252,14 @@ body {
   border-right: 2px solid #898989;
   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.7);
   transform: translateY(-1px);
+}
+.btn--primary {
+  background-color: #f5aa15;
+}
+@media (min-width: 56.25em) {
+  .btn--primary {
+    margin: 0;
+  }
 }
 
 .logo__figure {
@@ -457,8 +511,74 @@ body {
 }
 
 .header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  min-height: 95vh;
+  padding: 2rem 1rem;
   position: relative;
-  min-height: 200vh;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  gap: 1.5rem;
+  width: min(100%, 45rem);
+}
+.hero__logoImage {
+  display: block;
+  width: 17rem;
+  height: auto;
+  border-radius: 100%;
+  box-shadow: -5px 5px 18px 3px rgba(30, 32, 32, 0.25);
+  box-sizing: border-box;
+}
+.hero__cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.hero__headingHero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  gap: 0.75rem;
+}
+@media (min-width: 56.25em) {
+  .hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    gap: 5rem;
+    width: min(100%, 65rem);
+  }
+  .hero__logoImage {
+    width: 25rem;
+  }
+  .hero__cta, .hero__headingHero {
+    align-items: flex-start;
+  }
+}
+@media (min-width: 75em) {
+  .hero {
+    width: min(100%, 75rem);
+  }
+}
+@media (min-width: 112.5em) {
+  .hero {
+    width: min(100%, 95rem);
+  }
 }
 
 .navbarSection {

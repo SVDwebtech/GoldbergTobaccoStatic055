@@ -32,7 +32,7 @@ html {
 
 body {
 	@include displayFlexColumn;
-	background-color: $cp-oxford-blue;
+	background-color: $cp-eggshell;
 	/* This makes dealing with the sizes of elements much easier, 
 		and generally eliminates a number of pitfalls you can stumble on
 		 while laying out your content. */

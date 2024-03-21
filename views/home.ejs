@@ -11,8 +11,23 @@
 <body>
       <header class="header">
             <%- include('partials/navbar') %>
-            <h1 class="header__h1">Hello World!</h1>
-            <p><%= data %></p>
+            <section class="header__hero hero">
+                  <img class="hero__logoImage" src="img/Logo/GoldbergLogo500by500.png" alt="Logo image of Goldberg Tobacco Wholesalers in Modimolle.">
+                  <article class="hero__cta">
+                        <h1 class="hero__headingHero headingHero">
+                              <span class="headingHero__headingH1">Goldberg Tobacco Wholesalers</span>
+                              <span class="headingHero__byline">Quality is our Priority</span>
+                              <span class="headingHero__intro">We are your premier 
+                                    go-to supplier for top-quality vape and 
+                                    tobacco products and other smoking essentials 
+                                    in Modimolle, Limpopo, South Africa. With a 
+                                    commitment to excellence and a diverse range 
+                                    of quality products, we cater to both individual 
+                                    consumers and businesses alike. </span>
+                        </h1>
+                        <button class="btn btn--primary">View Products</button>
+                  </article>
+            </section>
       </header>
       <%- include('partials/footer') %>
       <script src="js/app.js"></script>
