@@ -24,9 +24,20 @@
     &--primary {
         background-color: $cp-harvest-gold;
     }
+    &--secondary {
+        background-color: rgba($cp-harvest-gold, .25);
+        border: 2px solid rgba($cp-oxford-blue, .95);
+    }
+    &--about {
+        margin-top: 1rem;
+    }
     @include respond(tab-land) {
         &--primary {
             margin: 0;
-        } 
+        }
+        &--about {
+            margin: 0;
+            margin-top: 1rem;
+        }
     }
 }
