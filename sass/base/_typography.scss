@@ -100,6 +100,10 @@ body {
 	&--productSlidePrice {
 		color: $cf-oxford-blue;
 		font-weight: 500;
+		text-align: center;
+	}
+	&--products {
+		color: $cf-oxford-blue;
 	}
 	&--contactDetailFooter {
 		@media (min-width: 340px) {

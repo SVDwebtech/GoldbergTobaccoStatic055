@@ -1,8 +1,9 @@
 .slider {
       @include displayFlexRow;
       justify-content: space-between;
+      align-items: center;
       width: 100%;
-      min-height: 32rem;
+      min-height: 36rem;
       padding: 0 1rem;
       position: relative;
       &__arrow {
@@ -19,7 +20,7 @@
             @include displayFlexColumn;
             gap: 2rem;
             position: absolute;
-            top: 55%;
+            top: 48%;
             left: 50%;
             transform: translate(-50%, -50%);
             z-index: -500;
@@ -29,11 +30,11 @@
             position: relative;
       }
       &__figure {
+            @include displayFlexColumn;
             border: 1px solid $cp-oxford-blue;
             box-shadow: 0 0 12px 2px rgba($cp-dark, .25);
             padding: 1rem;
             transition: opacity 1s;
-            
       }
       &__productImg {
             display: block;
@@ -52,6 +53,20 @@
       }
       &__index--1 {
             background-color: $cp-harvest-gold;
+      }
+      @include respond(tab-land) {
+            flex: 1 0 30rem;
+            min-height: 30rem;
+            &__productImg {
+                  width: 18rem;
+            }
+            &__slidesAndIndexContainer {
+                  top: 55%;
+                  height: 30rem;
+            }
+            &__slidesContainer {
+                  min-height: 26rem;
+            }
       }
 }
 .slider__animateRemoveSlideToLeft {

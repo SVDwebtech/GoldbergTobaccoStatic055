@@ -87,4 +87,17 @@
       @include displayFlexColumn;
       gap: 2rem;
       padding: 0rem 0rem 5rem;
+      &__aboutContentWrapper {
+            @include displayFlexColumn;
+      }
+      &__text {
+            @include displayFlexColumn;
+            gap: 1.5rem;
+      }
+      @include respond(tab-land) {
+            &__aboutContentWrapper {
+                  @include displayFlexRow;
+                  gap: 2rem;
+            }
+      }
 }
