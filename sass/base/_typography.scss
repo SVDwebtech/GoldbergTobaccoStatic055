@@ -76,6 +76,15 @@ body {
 		color: $cf-dark-goldenrod;
 	}
 }
+.headingH4 {
+	color: $cf-oxford-blue;
+	font-family: 'Lato', sans-serif;
+	font-size: clamp(1.6rem, 6vw, 1.8rem);
+	font-weight: 700;
+	letter-spacing: 2px;
+	text-align: center;
+	line-height: 1.1;
+}
 .paragraph {
 	&--logo {
 		color: $cf-harvest-gold;
@@ -87,6 +96,10 @@ body {
 	}
 	&--about {
 		color: $cf-oxford-blue;
+	}
+	&--productSlidePrice {
+		color: $cf-oxford-blue;
+		font-weight: 500;
 	}
 	&--contactDetailFooter {
 		@media (min-width: 340px) {

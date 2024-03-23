@@ -83,3 +83,8 @@
             }
       }
 }
+.products {
+      @include displayFlexColumn;
+      gap: 2rem;
+      padding: 0rem 0rem 5rem;
+}
