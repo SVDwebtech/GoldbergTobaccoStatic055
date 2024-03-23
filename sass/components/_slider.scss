@@ -32,6 +32,8 @@
             border: 1px solid $cp-oxford-blue;
             box-shadow: 0 0 12px 2px rgba($cp-dark, .25);
             padding: 1rem;
+            transition: opacity 1s;
+            
       }
       &__productImg {
             display: block;

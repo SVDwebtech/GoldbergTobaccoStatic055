@@ -573,6 +573,7 @@ body {
   border: 1px solid #011338;
   box-shadow: 0 0 12px 2px rgba(30, 32, 32, 0.25);
   padding: 1rem;
+  transition: opacity 1s;
 }
 .slider__productImg {
   display: block;
