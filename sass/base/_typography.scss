@@ -105,6 +105,10 @@ body {
 	&--products {
 		color: $cf-oxford-blue;
 	}
+	&--contactDetailsIntro, &--contactDetailContact {
+		color: $cf-oxford-blue;
+		font-weight: 500;
+	}
 	&--contactDetailFooter {
 		@media (min-width: 340px) {
 			font-size: clamp(1.3rem, 4vw, 1.6rem);	
@@ -122,6 +126,9 @@ body {
 	}	
 }
 .btn {	
+}
+.contact__address {
+	font-style: normal;
 }
 .footer {
 	&__navItem {

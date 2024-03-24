@@ -1,0 +1,85 @@
+.sidebar {
+      width: min(100%, 45rem);
+      padding: 2rem 1rem;
+      @include respond(tab-land) {
+            width: min(100%, 65rem);
+      }
+      @include respond(desk) {
+            width: min(100%, 75rem);
+      }
+      @include respond(big-desk) {
+            width: min(100%, 95rem);
+      }
+}
+.contact {
+      @include displayFlexColumn;
+      gap: 3rem;
+      &__contactContentWrapper {
+            @include displayFlexColumn;
+            gap: 3.25rem;
+      }
+      &__address {
+            @include displayFlexColumn;
+            gap: 2.25rem;
+      }
+      &__contactItemContact {
+            @include displayFlexColumn;
+            gap: 2rem;
+      }
+      &__contactIconContact {
+            width: 3.75rem;
+            height: 3.75rem;
+      }
+      &__numberSeperator {
+            display: none;
+      }
+      &__googleMaps {
+            @include displayFlexColumn;
+            gap: 2rem;
+      }
+      &__googleIframeContainer {
+            border: 2px solid $cp-oxford-blue;
+            box-shadow: 0 0 12px 2px rgba($cp-dark, .25);
+            width: 100%;
+            padding: .75rem;
+      }
+      &__googleIframe {
+            display: block;
+            width: min(100%, 45rem);
+            height: 25rem;
+      }
+      @include respond(tab-land) {
+            &__contactContentWrapper {
+                  @include displayFlexRow;
+                  gap: 5rem;
+            }
+            &__address {
+                  align-items: flex-start;
+            }
+            &__contactItemContact {
+                  @include displayFlexRow;
+                  gap: 2rem;
+            }
+            &__contactLinkContact {
+                  @include displayFlexRow;
+                  gap: .5rem;
+            }
+            &__numberSeperator {
+                  display: inline-block;
+                  background-color: $cp-oxford-blue;
+                  border-radius: $br-circle;
+                  width: 8px;
+                  height: 8px;
+            }
+            &__contactIconContact {
+                  width: 2.75rem;
+                  height: 2.75rem;
+            }
+            &__googleMaps {
+                  flex: 0 0 35%;
+            }
+            &__googleIframe {
+                  height: 25rem;
+            }
+      }
+}
