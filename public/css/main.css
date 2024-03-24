@@ -260,6 +260,14 @@ body {
   text-shadow: 1px 1px 1px #011338;
   line-height: 1.2;
 }
+.headingH3--getDirections {
+  color: #f5aa15;
+}
+@media (min-width: 56.25em) {
+  .headingH3--getDirections {
+    text-align: left;
+  }
+}
 .headingH3--footer {
   color: #c7912b;
 }
@@ -375,6 +383,10 @@ body {
     margin: 0;
   }
   .btn--about {
+    margin: 0;
+    margin-top: 1rem;
+  }
+  .btn--products {
     margin: 0;
     margin-top: 1rem;
   }
@@ -620,15 +632,34 @@ body {
     flex: 1 0 30rem;
     min-height: 30rem;
   }
+  .slider__arrow {
+    margin-bottom: 15rem;
+  }
   .slider__productImg {
     width: 18rem;
   }
   .slider__slidesAndIndexContainer {
-    top: 55%;
+    top: 30%;
     height: 30rem;
   }
   .slider__slidesContainer {
     min-height: 26rem;
+  }
+}
+@media (min-width: 75em) {
+  .slider__arrow {
+    margin-bottom: 8rem;
+  }
+  .slider__slidesAndIndexContainer {
+    top: 43%;
+  }
+}
+@media (min-width: 112.5em) {
+  .slider__arrow {
+    margin-bottom: 0rem;
+  }
+  .slider__slidesAndIndexContainer {
+    top: 55%;
   }
 }
 
@@ -744,6 +775,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    align-items: flex-start;
     gap: 5rem;
   }
   .contact__address {
@@ -782,8 +814,10 @@ body {
   }
   .contact__googleMaps {
     flex: 0 0 35%;
+    align-items: flex-start;
   }
   .contact__googleIframe {
+    align-items: flex-start;
     height: 25rem;
   }
 }
@@ -1181,6 +1215,9 @@ body {
     align-items: center;
     gap: 1rem;
     gap: 2rem;
+  }
+  .products__text {
+    align-items: flex-start;
   }
 }
 

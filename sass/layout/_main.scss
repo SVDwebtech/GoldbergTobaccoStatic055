@@ -99,5 +99,8 @@
                   @include displayFlexRow;
                   gap: 2rem;
             }
+            &__text {
+                  align-items: flex-start;
+            }
       }
 }

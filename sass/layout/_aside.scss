@@ -54,6 +54,7 @@
       @include respond(tab-land) {
             &__contactContentWrapper {
                   @include displayFlexRow;
+                  align-items: flex-start;
                   gap: 5rem;
             }
             &__address {
@@ -84,8 +85,10 @@
             }
             &__googleMaps {
                   flex: 0 0 35%;
+                  align-items: flex-start;
             }
             &__googleIframe {
+                  align-items: flex-start;
                   height: 25rem;
             }
       }

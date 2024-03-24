@@ -72,6 +72,12 @@ body {
 	text-align: center;
 	text-shadow: 1px 1px 1px $cp-oxford-blue;
 	line-height: 1.2;
+	&--getDirections {
+		color: $cf-harvest-gold;
+		@include respond(tab-land) {
+			text-align: left;
+		}
+	}
 	&--footer {
 		color: $cf-dark-goldenrod;
 	}

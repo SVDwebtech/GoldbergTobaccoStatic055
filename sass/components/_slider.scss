@@ -57,15 +57,34 @@
       @include respond(tab-land) {
             flex: 1 0 30rem;
             min-height: 30rem;
+            &__arrow {
+                  margin-bottom: 15rem;
+            }
             &__productImg {
                   width: 18rem;
             }
             &__slidesAndIndexContainer {
-                  top: 55%;
+                  top: 30%;
                   height: 30rem;
             }
             &__slidesContainer {
                   min-height: 26rem;
+            }
+      }
+      @include respond(desk) {
+            &__arrow {
+                  margin-bottom: 8rem;
+            }
+            &__slidesAndIndexContainer {
+                  top: 43%;
+            }
+      }
+      @include respond(big-desk) {
+            &__arrow {
+                  margin-bottom: 0rem;
+            }
+            &__slidesAndIndexContainer {
+                  top: 55%;
             }
       }
 }
