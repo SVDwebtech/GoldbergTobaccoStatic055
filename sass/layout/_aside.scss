@@ -26,6 +26,9 @@
             @include displayFlexColumn;
             gap: 2rem;
       }
+      &__contactItemContact--numbers {
+            gap: 0;
+      }
       &__contactIconContact {
             width: 3.75rem;
             height: 3.75rem;
@@ -55,10 +58,14 @@
             }
             &__address {
                   align-items: flex-start;
+                  gap: 1rem;
             }
             &__contactItemContact {
                   @include displayFlexRow;
                   gap: 2rem;
+            }
+            &__contactItemContact--numbers {
+                  gap: 1.5rem;
             }
             &__contactLinkContact {
                   @include displayFlexRow;

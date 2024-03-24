@@ -2,8 +2,26 @@
       @include displayFlexColumn;
       gap: 3rem;
       background-color: $cp-oxford-blue;
-      width: min(100%, 45rem);
-      padding: 1rem;
+      width: 100%;
+      padding: 5rem 1rem 1rem;
+      &__websiteLinksContainer {
+            @include displayFlexColumn;
+            gap: 2.5rem;
+            @include respond(tab-land) {
+                  @include displayFlexRow;
+                  gap: 1rem;
+                  justify-content: space-between;
+                  @include respond(tab-land) {
+                        width: min(100%, 65rem);
+                  }
+                  @include respond(desk) {
+                        width: min(100%, 75rem);
+                  }
+                  @include respond(big-desk) {
+                        width: min(100%, 95rem);
+                  }
+            }
+      }
       &__logoImg {
             display: block;
             width: 15rem;
@@ -12,21 +30,44 @@
       &__navList {
             @include displayFlexColumn;
             gap: .5rem;
+            @include respond(tab-land) {
+                  align-items: flex-start;
+            }
       }
       &__address {
             @include displayFlexColumn;
             gap: 2rem;
-            @media (min-width: 340px) {
-                  gap: .25rem;
+            @include respond(tab-land) {
+                  align-items: flex-start;
+                  gap: 1rem;
+            }
+      }
+      &__contactItemFooter--numbers {
+            @include displayFlexColumn;
+            gap: 0;
+            @include respond(tab-land) {
+                  @include displayFlexRow;
+                  gap: .5rem;
             }
       }
       &__contactLinkFooter {
             @include displayFlexColumn;
             gap: 0rem;
-            @media (min-width: 340px) {
+            @include respond(tab-land) {
                   @include displayFlexRow;
                   gap: .5rem;
-                  margin-right: 2rem;
+                  // margin-right: 2rem;
+            }
+      }
+      &__numberSeperator {
+            display: none;
+            @include respond(tab-land) {
+                  display: inline-block;
+                  background-color: $cp-harvest-gold;
+                  border-radius: $br-circle;
+                  width: 8px;
+                  height: 8px;
+                  margin: 0 .75rem;
             }
       }
       &__contactIconFooter {
@@ -39,7 +80,7 @@
             width: 3.4rem;
             height: 3.4rem;
       }
-      @media (min-width: 340px) {
+      @include respond(tab-land) {
             &__contactIconFooter {
                   display: block;
                   width: 2.7rem;
@@ -53,5 +94,17 @@
       }
       &__copyAndDev {
             @include displayFlexColumn;
+            @include respond(tab-land) {
+                  @include displayFlexRow;
+                  justify-content: space-between;
+                  align-items: flex-start;
+                  width: min(100%, 65rem);
+            }
+            @include respond(desk) {
+                  width: min(100%, 75rem);
+            }
+            @include respond(big-desk) {
+                  width: min(100%, 95rem);
+            }
       }
 }
