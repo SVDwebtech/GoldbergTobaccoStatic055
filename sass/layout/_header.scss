@@ -1,14 +1,22 @@
 // style header section
 .header {
-    @include displayFlexColumn;
-    min-height: 95vh;
-    padding: 2rem 1rem;
-    position: relative;
+    filter: drop-shadow(0px 10px 4px rgba($cp-dark, .85));
+    &__headerContainer {
+        @include displayFlexColumn;
+        background: linear-gradient(to bottom right, rgba($cp-eggshell, .75) 10%, rgba($cp-white, .75) 75%), url("../img/WebsiteImages/GoldbergHeroBgImg.webp");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        clip-path: polygon(100% 100%, 79% 96%, 61% 100%, 55% 93%, 33% 100%, 21% 93%, 14% 100%, 0 96%, 0 0, 100% 0);
+        min-height: 95vh;
+        position: relative;
+    }
 }
 .hero {
     @include displayFlexColumn;
     gap: 1.5rem;
     width: min(100%, 45rem);
+    padding: 5rem 2rem;
     &__logoImage {
         display: block;
         width: 17rem;
