@@ -476,7 +476,7 @@ body {
   top: 0;
   left: 0;
 }
-.linkDiv--about {
+.linkDiv--about, .linkDiv--products, .linkDiv--contact {
   top: -115px;
 }
 
