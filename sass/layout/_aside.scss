@@ -15,6 +15,7 @@
       position: relative;
       @include displayFlexColumn;
       gap: 3rem;
+      padding-bottom: 5rem;
       &__contactContentWrapper {
             @include displayFlexColumn;
             gap: 3.25rem;

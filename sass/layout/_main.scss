@@ -15,7 +15,7 @@
 .about {
       @include displayFlexColumn;
       gap: 2rem;
-      padding: 0rem 0rem 5rem;
+      padding: 5rem 0rem 5rem;
       position: relative;
       &__aboutContentWrapper {
             @include displayFlexColumn;
@@ -62,7 +62,11 @@
       &__text {
             @include displayFlexColumn;
       }
+      @include respond(tab-port) {
+            padding-top: 5rem;
+      }
       @include respond(tab-land) {
+            padding-top: 5rem;
             &__aboutContentWrapper {
                   @include displayFlexRow;
                   align-items: flex-start;
@@ -87,7 +91,7 @@
 .products {
       @include displayFlexColumn;
       gap: 2rem;
-      padding: 0rem 0rem 5rem;
+      padding: 0rem 0rem 2rem;
       position: relative;
       &__aboutContentWrapper {
             @include displayFlexColumn;
