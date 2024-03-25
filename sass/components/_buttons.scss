@@ -28,6 +28,10 @@
         background-color: rgba($cp-harvest-gold, .25);
         border: 2px solid rgba($cp-oxford-blue, .95);
     }
+    &--primary-legaAge {
+        background-color: $cp-harvest-gold;
+        padding: .65em 3em;
+    }
     &--about {
         margin-top: 1rem;
     }

@@ -251,8 +251,18 @@ function moveSlidesToRight() {
     }, 850);
   }
 }
-
-
+///////////////////////////////////////////////////////////////////////////////////
+// legal Age btn logic
+///////////////////////////////////////////////////////////////////////////////////
+const legalAgeBtn = document.querySelector(".legalAge__btn");
+const legalAgePage = document.querySelector(".legalAge");
+legalAgeBtn.addEventListener('click', function(){
+  legalAgePage.style.opacity = "0";
+  legalAgePage.style.visibility = "hidden";
+  setTimeout(() => {
+    legalAgePage.style.display = "none";
+  }, 2000);
+});
 
 
 

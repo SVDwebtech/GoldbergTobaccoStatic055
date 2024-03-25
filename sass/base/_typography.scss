@@ -92,6 +92,15 @@ body {
 	line-height: 1.1;
 }
 .paragraph {
+	&--legalAge {
+		color: $cf-oxford-blue;
+		font-family: 'Lato', sans-serif;
+		font-size: clamp(1.4rem, 4.6vw, 1.6rem);
+		font-weight: 500;
+		letter-spacing: 1px;
+		text-align: center;
+		line-height: 1.2;
+	}
 	&--logo {
 		color: $cf-harvest-gold;
 		font-family: 'Rum Raisin', sans-serif;
@@ -131,7 +140,19 @@ body {
 		text-underline-offset: 3px;
 	}	
 }
-.btn {	
+.btn {
+	color: $cf-oxford-blue;
+	font-family: 'Lato', sans-serif;
+	font-size: clamp(1.6rem, 5.5vw, 1.8rem);
+	font-weight: 500;
+	letter-spacing: 1px;
+	text-align: center;
+	line-height: 1.2;
+	&--primary-legalAge {
+		font-size: clamp(1.7rem, 5.5vw, 1.9rem);
+		font-weight: 700;
+		letter-spacing: 2px;
+	}	
 }
 .contact__address {
 	font-style: normal;

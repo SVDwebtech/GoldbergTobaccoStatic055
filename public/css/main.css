@@ -282,6 +282,15 @@ body {
   line-height: 1.1;
 }
 
+.paragraph--legalAge {
+  color: #011338;
+  font-family: "Lato", sans-serif;
+  font-size: clamp(1.4rem, 4.6vw, 1.6rem);
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-align: center;
+  line-height: 1.2;
+}
 .paragraph--logo {
   color: #f5aa15;
   font-family: "Rum Raisin", sans-serif;
@@ -318,6 +327,21 @@ body {
   color: #f5aa15;
   text-decoration: underline;
   text-underline-offset: 3px;
+}
+
+.btn {
+  color: #011338;
+  font-family: "Lato", sans-serif;
+  font-size: clamp(1.6rem, 5.5vw, 1.8rem);
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-align: center;
+  line-height: 1.2;
+}
+.btn--primary-legalAge {
+  font-size: clamp(1.7rem, 5.5vw, 1.9rem);
+  font-weight: 700;
+  letter-spacing: 2px;
 }
 
 .contact__address {
@@ -375,6 +399,10 @@ body {
   background-color: rgba(245, 170, 21, 0.25);
   border: 2px solid rgba(1, 19, 56, 0.95);
 }
+.btn--primary-legaAge {
+  background-color: #f5aa15;
+  padding: 0.65em 3em;
+}
 .btn--about {
   margin-top: 1rem;
 }
@@ -390,6 +418,55 @@ body {
     margin: 0;
     margin-top: 1rem;
   }
+}
+
+.legalAge {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  justify-content: flex-start;
+  background: linear-gradient(to bottom, #f0f0f0 50%, #e1e1ca 80%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  transition: all 1.9s;
+}
+.legalAge__contentContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  justify-content: flex-start;
+  gap: 4rem;
+  background: linear-gradient(to bottom, rgba(225, 225, 202, 0.55) 10%, rgba(240, 240, 240, 0.65) 75%, #f0f0f0 95%), linear-gradient(to bottom, rgba(225, 225, 202, 0.55) 10%, rgba(240, 240, 240, 0.65) 50%, #f0f0f0 85%), url("../img/WebsiteImages/GoldbergHeroBgImg.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  padding: 5rem 2rem 0rem;
+}
+.legalAge__warningImagesContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  gap: 2rem;
+}
+.legalAge__warningImage, .legalAge__logoImage {
+  display: block;
+  width: 13rem;
+  height: auto;
 }
 
 .logo__figure {
