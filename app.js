@@ -259,6 +259,7 @@ const legalAgePage = document.querySelector(".legalAge");
 legalAgeBtn.addEventListener('click', function(){
   legalAgePage.style.opacity = "0";
   legalAgePage.style.visibility = "hidden";
+  document.body.style.overflow = "visible";
   setTimeout(() => {
     legalAgePage.style.display = "none";
   }, 2000);

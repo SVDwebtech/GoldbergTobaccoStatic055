@@ -31,6 +31,7 @@ html {
 }
 
 body {
+	overflow-y: hidden;
 	@include displayFlexColumn;
 	gap: 0;
 	background-color: $cp-eggshell;
