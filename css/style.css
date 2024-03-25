@@ -345,6 +345,9 @@ body {
   font-weight: 700;
   letter-spacing: 2px;
 }
+.btn--secondary {
+  color: #f0f0f0;
+}
 
 .contact__address {
   font-style: normal;
@@ -398,10 +401,10 @@ body {
   background-color: #f5aa15;
 }
 .btn--secondary {
-  background-color: rgba(245, 170, 21, 0.25);
-  border: 2px solid rgba(1, 19, 56, 0.95);
+  background-color: #011338;
+  border: 2px solid #c7912b;
 }
-.btn--primary-legaAge {
+.btn--primary-legalAge {
   background-color: #f5aa15;
   padding: 0.65em 3em;
 }

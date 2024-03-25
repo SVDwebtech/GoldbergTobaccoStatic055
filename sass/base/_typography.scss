@@ -153,6 +153,9 @@ body {
 		font-weight: 700;
 		letter-spacing: 2px;
 	}	
+	&--secondary {
+		color: $cf-white;
+	}	
 }
 .contact__address {
 	font-style: normal;

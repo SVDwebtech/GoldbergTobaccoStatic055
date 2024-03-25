@@ -25,10 +25,10 @@
         background-color: $cp-harvest-gold;
     }
     &--secondary {
-        background-color: rgba($cp-harvest-gold, .25);
-        border: 2px solid rgba($cp-oxford-blue, .95);
+        background-color: rgba($cp-oxford-blue, 1);
+        border: 2px solid rgba($cp-dark-goldenrod, 1);
     }
-    &--primary-legaAge {
+    &--primary-legalAge {
         background-color: $cp-harvest-gold;
         padding: .65em 3em;
     }
