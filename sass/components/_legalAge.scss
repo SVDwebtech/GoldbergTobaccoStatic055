@@ -1,0 +1,38 @@
+.legalAge {
+      @include displayFlexColumn;
+      justify-content: flex-start;
+      background: linear-gradient(to bottom, rgba($cp-white, 1) 50%, rgba($cp-eggshell, 1) 80%);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      min-height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      transition: all 1.5s;
+      &__contentContainer {
+            @include displayFlexColumn;
+            justify-content: flex-start;
+            gap: 4rem;
+            background: linear-gradient(to bottom, rgba($cp-eggshell, .55) 10%, rgba($cp-white, .65) 75%, rgba($cp-white, 1) 95%),
+                        linear-gradient(to bottom, rgba($cp-eggshell, .55) 10%, rgba($cp-white, .65) 50%, rgba($cp-white, 1) 85%),
+                        url("../img/WebsiteImages/GoldbergHeroBgImg.webp");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            min-height: 100vh;
+            padding: 5rem 2rem 0rem;
+      }
+      &__warningImagesContainer {
+            @include displayFlexRow;
+            gap: 2rem;
+      }
+      &__warningImage, &__logoImage {
+            display: block;
+            width: 13rem;
+            height: auto;
+      }
+}

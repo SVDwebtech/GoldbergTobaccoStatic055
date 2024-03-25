@@ -1000,20 +1000,8 @@ body {
   }
 }
 
-.header {
+.header__heroContainer {
   filter: drop-shadow(0px 10px 4px rgba(30, 32, 32, 0.85));
-}
-.header__headerContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  background: linear-gradient(to bottom right, rgba(225, 225, 202, 0.75) 10%, rgba(240, 240, 240, 0.75) 75%), url("../img/WebsiteImages/GoldbergHeroBgImg.webp");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  clip-path: polygon(100% 100%, 79% 96%, 61% 100%, 55% 93%, 33% 100%, 21% 93%, 14% 100%, 0 96%, 0 0, 100% 0);
   min-height: 95vh;
   position: relative;
 }
@@ -1024,9 +1012,43 @@ body {
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  background: linear-gradient(to bottom right, rgba(225, 225, 202, 0.75) 10%, rgba(240, 240, 240, 0.75) 75%), url("../img/WebsiteImages/GoldbergHeroBgImg.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  clip-path: polygon(100% 100%, 79% 96%, 61% 100%, 55% 93%, 33% 100%, 21% 93%, 14% 100%, 0 96%, 0 0, 100% 0);
+  width: 100%;
+  padding: 5rem 2rem;
+}
+.hero__contentWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
   gap: 1.5rem;
   width: min(100%, 45rem);
-  padding: 5rem 2rem;
+}
+@media (min-width: 56.25em) {
+  .hero__contentWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    gap: 5rem;
+    width: min(100%, 65rem);
+  }
+}
+@media (min-width: 75em) {
+  .hero__contentWrapper {
+    width: min(100%, 75rem);
+  }
+}
+@media (min-width: 112.5em) {
+  .hero__contentWrapper {
+    width: min(100%, 95rem);
+  }
 }
 .hero__logoImage {
   display: block;
@@ -1052,30 +1074,11 @@ body {
   gap: 0.75rem;
 }
 @media (min-width: 56.25em) {
-  .hero {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    gap: 5rem;
-    width: min(100%, 65rem);
-  }
   .hero__logoImage {
     width: 25rem;
   }
   .hero__cta, .hero__headingHero {
     align-items: flex-start;
-  }
-}
-@media (min-width: 75em) {
-  .hero {
-    width: min(100%, 75rem);
-  }
-}
-@media (min-width: 112.5em) {
-  .hero {
-    width: min(100%, 95rem);
   }
 }
 

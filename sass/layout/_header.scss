@@ -1,22 +1,36 @@
 // style header section
 .header {
-    filter: drop-shadow(0px 10px 4px rgba($cp-dark, .85));
-    &__headerContainer {
-        @include displayFlexColumn;
-        background: linear-gradient(to bottom right, rgba($cp-eggshell, .75) 10%, rgba($cp-white, .75) 75%), url("../img/WebsiteImages/GoldbergHeroBgImg.webp");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        clip-path: polygon(100% 100%, 79% 96%, 61% 100%, 55% 93%, 33% 100%, 21% 93%, 14% 100%, 0 96%, 0 0, 100% 0);
+    &__heroContainer {
+        filter: drop-shadow(0px 10px 4px rgba($cp-dark, .85));
         min-height: 95vh;
         position: relative;
     }
 }
 .hero {
     @include displayFlexColumn;
-    gap: 1.5rem;
-    width: min(100%, 45rem);
+    background: linear-gradient(to bottom right, rgba($cp-eggshell, .75) 10%, rgba($cp-white, .75) 75%), url("../img/WebsiteImages/GoldbergHeroBgImg.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: polygon(100% 100%, 79% 96%, 61% 100%, 55% 93%, 33% 100%, 21% 93%, 14% 100%, 0 96%, 0 0, 100% 0);
+    width: 100%;
     padding: 5rem 2rem;
+    &__contentWrapper {
+        @include displayFlexColumn;
+        gap: 1.5rem;
+        width: min(100%, 45rem);
+        @include respond(tab-land) {
+            @include displayFlexRow;
+            gap: 5rem;
+            width: min(100%, 65rem);
+        }
+        @include respond(desk) {
+            width: min(100%, 75rem);
+        }
+        @include respond(big-desk) {
+            width: min(100%, 95rem);
+        }
+    }
     &__logoImage {
         display: block;
         width: 17rem;
@@ -33,21 +47,12 @@
         gap:.75rem;
     }
     @include respond(tab-land) {
-        @include displayFlexRow;
-        gap: 5rem;
-        width: min(100%, 65rem);
         &__logoImage {
             width: 25rem;
         }
         &__cta, &__headingHero {
            align-items: flex-start;
         }
-    }
-    @include respond(desk) {
-        width: min(100%, 75rem);
-    }
-    @include respond(big-desk) {
-        width: min(100%, 95rem);
     }
 }
 
