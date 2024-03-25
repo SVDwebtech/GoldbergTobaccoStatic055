@@ -4,9 +4,11 @@
   "description": "online shop for tobacco products",
   "main": "index.js",
   "scripts": {
-    "watch:sass": "sass --watch sass/main.scss public/css/main.css",
-    "nodemon-watch": "nodemon index.js -e *",
-    "dev": "npm-run-all --parallel watch:sass nodemon-watch"
+    "watch:sass": "sass sass/main.scss css/style.css -w",
+    "compile:sass": "sass sass/main.scss css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.comp.css -o css/style.prefix.css",
+    "compress:css": "sass css/style.prefix.css css/style.css --style=compressed",
+    "build:css": "npm-run-all compile:sass prefix:css compress:css"
   },
   "author": "Schalk van Dyk",
   "license": "ISC",
