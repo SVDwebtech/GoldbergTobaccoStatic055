@@ -16,6 +16,7 @@
       @include displayFlexColumn;
       gap: 2rem;
       padding: 0rem 0rem 5rem;
+      position: relative;
       &__aboutContentWrapper {
             @include displayFlexColumn;
             width: 100%;
@@ -87,6 +88,7 @@
       @include displayFlexColumn;
       gap: 2rem;
       padding: 0rem 0rem 5rem;
+      position: relative;
       &__aboutContentWrapper {
             @include displayFlexColumn;
       }

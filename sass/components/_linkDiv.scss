@@ -1,3 +1,9 @@
 .linkDiv {
-    
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      &--about {
+            top: -115px;
+      }
 }

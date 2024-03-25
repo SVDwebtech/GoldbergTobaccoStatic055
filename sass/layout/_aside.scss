@@ -12,6 +12,7 @@
       }
 }
 .contact {
+      position: relative;
       @include displayFlexColumn;
       gap: 3rem;
       &__contactContentWrapper {
