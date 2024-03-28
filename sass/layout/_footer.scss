@@ -9,6 +9,7 @@
             gap: 2.5rem;
             @include respond(tab-land) {
                   @include displayFlexRow;
+                  align-items: flex-start;
                   gap: 1rem;
                   justify-content: space-between;
                   @include respond(tab-land) {
@@ -26,6 +27,14 @@
             display: block;
             width: 15rem;
             height: auto;
+      }
+      &__facebookIcon {
+            display: block;
+            width: 4rem;
+            height: auto;
+            @include respond(tab-land) {
+                  margin-top: 1rem;
+            }
       }
       &__navList {
             @include displayFlexColumn;

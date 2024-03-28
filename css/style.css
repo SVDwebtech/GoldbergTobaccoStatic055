@@ -942,6 +942,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    align-items: flex-start;
     gap: 1rem;
     justify-content: space-between;
   }
@@ -965,6 +966,16 @@ body {
   display: block;
   width: 15rem;
   height: auto;
+}
+.footer__facebookIcon {
+  display: block;
+  width: 4rem;
+  height: auto;
+}
+@media (min-width: 56.25em) {
+  .footer__facebookIcon {
+    margin-top: 1rem;
+  }
 }
 .footer__navList {
   display: flex;
