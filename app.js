@@ -254,6 +254,10 @@ function moveSlidesToRight() {
 ///////////////////////////////////////////////////////////////////////////////////
 // legal Age btn logic
 ///////////////////////////////////////////////////////////////////////////////////
+// legalAgePage.style.opacity = "1";
+// legalAgePage.style.visibility = "visible";
+document.body.style.overflow = "hidden";
+// legalAgePage.style.display = "flex";
 const legalAgeBtn = document.querySelector(".legalAge__btn");
 const legalAgePage = document.querySelector(".legalAge");
 legalAgeBtn.addEventListener('click', function(){
@@ -264,6 +268,13 @@ legalAgeBtn.addEventListener('click', function(){
     legalAgePage.style.display = "none";
   }, 2000);
 });
+setTimeout(() => {
+  window.scroll({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
+}, 3000);
 
 
 

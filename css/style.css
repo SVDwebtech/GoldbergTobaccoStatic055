@@ -1122,7 +1122,7 @@ body {
   background-size: cover;
   clip-path: polygon(100% 100%, 79% 96%, 61% 100%, 55% 93%, 33% 100%, 21% 93%, 14% 100%, 0 96%, 0 0, 100% 0);
   width: 100%;
-  padding: 5rem 5rem;
+  padding: 5rem 1rem;
 }
 .hero__contentWrapper {
   display: flex;
