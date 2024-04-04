@@ -33,7 +33,7 @@
             @include displayFlexColumn;
             border: 1px solid $cp-oxford-blue;
             box-shadow: 0 0 12px 2px rgba($cp-dark, .25);
-            padding: 1rem;
+            padding: 3rem 1rem;
             transition: opacity 1s;
       }
       &__productImg {
@@ -43,13 +43,13 @@
       }
       &__indexContainer {
             @include displayFlexRow;
-            gap: .5 rem;
+            gap: .35rem;
       }
       &__index {
             background-color: $cp-oxford-blue;
             border-radius: $br-circle;
-            width: 7px;
-            height: 7px;
+            width: 6px;
+            height: 6px;
       }
       &__index--1 {
             background-color: $cp-harvest-gold;
